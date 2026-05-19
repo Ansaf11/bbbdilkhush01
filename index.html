@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- 👇 MOST IMPORTANT (mobile fix) -->
+<!-- MOBILE FIX -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title></title>
@@ -14,7 +14,6 @@ body {
     font-family: Arial, sans-serif;
     background: #000814;
 
-    /* 👇 center + mobile spacing */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +21,7 @@ body {
     padding: 10px;
 }
 
-/* 👇 MOBILE PERFECT SIZE */
+/* MOBILE PERFECT SIZE */
 .container {
     width: 100%;
     max-width: 400px;
@@ -57,6 +56,7 @@ h1 {
     text-align: center;
     margin: 15px 0;
 }
+
 .list p {
     margin: 12px 0;
     font-size: 15px;
@@ -87,6 +87,7 @@ h1 {
     font-size: 14px;
     cursor: pointer;
 }
+
 .ads-box span {
     color: #4da3ff;
     font-weight: bold;
@@ -107,24 +108,42 @@ h1 {
     margin-top: 10px;
 }
 </style>
-</head>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+{if(f.fbq)return;
+n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+
+}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1553596452853366');
+
+fbq('init', '1516051916833936');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1553596452853366&ev=PageView&noscript=1"
-/></noscript>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1516051916833936&ev=PageView&noscript=1"/>
+</noscript>
 <!-- End Meta Pixel Code -->
+
+</head>
+
 <body>
 
 <div class="container">
@@ -142,13 +161,17 @@ src="https://www.facebook.com/tr?id=1553596452853366&ev=PageView&noscript=1"
 
     <p>Join our learning community and grow your knowledge</p>
 
-    <a href="https://t.me/+0sMZYVGz9z8yMGM9" class="join-btn">
-        JOIN TELEGRAM
+    <!-- SAME WORKING BUTTON -->
+    <a href="https://t.me/+0sMZYVGz9z8yMGM9"
+       class="join-btn"
+       onclick="fbq('track','Subscribe');">
+       JOIN TELEGRAM
     </a>
 
-    <!-- 👇 CLICKABLE BOX -->
-    <div class="ads-box" onclick="window.location.href='https://t.me/+yd0jEZBUi3lmZjg1'">
-        Advertising By <span>AS Ads Service</span>
+    <!-- CLICKABLE BOX -->
+    <div class="ads-box"
+         onclick="window.location.href='https://t.me/+m04-TJU-qkwwODY1'">
+        Advertising By <span>Digital Growth Zone</span>
     </div>
 
     <p class="quote">
